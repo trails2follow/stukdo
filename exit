@@ -1,0 +1,70 @@
+[1mdiff --git a/app/controllers/tasks_controller.rb b/app/controllers/tasks_controller.rb[m
+[1mindex a4e6217..4c58373 100644[m
+[1m--- a/app/controllers/tasks_controller.rb[m
+[1m+++ b/app/controllers/tasks_controller.rb[m
+[36m@@ -1,6 +1,6 @@[m
+ class TasksController < ApplicationController[m
+   before_action :authenticate_user![m
+[31m-  before_action :set_task, only: [:show, :edit, :update, :destroy][m
+[32m+[m[32m  before_action :set_task, only: [:show, :edit, :update, :destroy, :change][m
+ [m
+   respond_to :html[m
+ [m
+[36m@@ -39,6 +39,13 @@[m [mclass TasksController < ApplicationController[m
+     respond_with(@task)[m
+   end[m
+ [m
+[32m+[m[32m  def change[m
+[32m+[m[32m    @trask.update_attributes(state: params[:state])[m
+[32m+[m[32m    respond_to do |format|[m
+[32m+[m[32m      format.html {redirect_to task_path, notice: "Task Update"}[m
+[32m+[m[41m    [m
+[32m+[m[32m  end[m
+[32m+[m
+   private[m
+     def set_task[m
+       @task = Task.find(params[:id])[m
+[36m@@ -47,4 +54,5 @@[m [mclass TasksController < ApplicationController[m
+     def task_params[m
+       params.require(:task).permit(:content, :state)[m
+     end[m
+[31m-end[m
+[32m+[m[32m  end[m
+[32m+[m[32mend[m
+\ No newline at end of file[m
+[1mdiff --git a/app/views/tasks/index.html.erb b/app/views/tasks/index.html.erb[m
+[1mindex a5d91d2..ce79752 100644[m
+[1m--- a/app/views/tasks/index.html.erb[m
+[1m+++ b/app/views/tasks/index.html.erb[m
+[36m@@ -5,7 +5,7 @@[m
+     <tr>[m
+       <th>Content</th>[m
+       <th>State</th>[m
+[31m-      <th colspan="3"></th>[m
+[32m+[m[32m      <th colspan="4"></th>[m
+     </tr>[m
+   </thead>[m
+ [m
+[36m@@ -17,6 +17,7 @@[m
+         <td><%= link_to 'Show', task %></td>[m
+         <td><%= link_to 'Edit', edit_task_path(task) %></td>[m
+         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>[m
+[32m+[m[32m        <td><%= link_to "Mark as Doing", change_task_path(task, state: "doing"), method: :put %></td>[m
+       </tr>[m
+     <% end %>[m
+   </tbody>[m
+[1mdiff --git a/config/routes.rb b/config/routes.rb[m
+[1mindex 9a3bbd2..7600aa5 100644[m
+[1m--- a/config/routes.rb[m
+[1m+++ b/config/routes.rb[m
+[36m@@ -1,5 +1,9 @@[m
+ Rails.application.routes.draw do[m
+[31m-  resources :tasks[m
+[32m+[m[32m  resources :tasks do[m
+[32m+[m[32m    member do[m
+[32m+[m[32m      put :change[m
+[32m+[m[32m    end[m
+[32m+[m[32m  end[m
+ [m
+   devise_for :users[m
+ root 'pages#home'[m
