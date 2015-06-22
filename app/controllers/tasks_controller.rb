@@ -36,7 +36,7 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    respond_with(@task)
+    respond_with(@task).destroy
   end
 
   def change
