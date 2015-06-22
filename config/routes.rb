@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   
-  resources :tasks
 
-resources :tasks do
+  resources :tasks do
     member do
-      get :change
+      put :change
 
     end
   end
