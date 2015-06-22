@@ -46,7 +46,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1.1)
+    coffee-script-source (1.8.0)
     commonjs (0.2.7)
     devise (3.5.1)
       bcrypt (~> 3.0)
@@ -67,6 +67,9 @@ GEM
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    js-routes (1.0.1)
+      railties (>= 3.2)
+      sprockets-rails
     json (1.8.2)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -146,10 +149,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  coffee-script-source (= 1.8.0)
   devise
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  js-routes
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

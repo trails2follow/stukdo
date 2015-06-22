@@ -45,3 +45,7 @@ gem "font-awesome-rails"
 gem "simple_form"
 
 gem "devise"
+
+gem "js-routes"
+
+gem 'coffee-script-source', '1.8.0'

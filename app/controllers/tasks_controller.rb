@@ -1,13 +1,11 @@
 class TasksController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_task, only: [:show, :edit, :update, :destroy, :change]
+  before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
 
   def index
-    @to_do = current_user.tasks.where(state: "to_do")
-    @doing = current_user.tasks.where(state: "doing")
-    @done = current_user.tasks.where(state: "done")
+    @tasks = current_user.tasks
     respond_with(@tasks)
   end
 
@@ -36,14 +34,7 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    respond_with(@task).destroy
-  end
-
-  def change
-    @task.update_attributes(state: params[:state])
-    respond_to do |format|
-      format.html {redirect_to tasks_path, notice: "Task Update"}
-    end    
+    respond_with(@task)
   end
 
   private
@@ -52,6 +43,6 @@ class TasksController < ApplicationController
     end
 
     def task_params
-      params.require(:task).permit(:content, :state)
+      params.require(:task).permit(:content)
     end
-  end
+end
