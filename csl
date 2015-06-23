@@ -1,0 +1,167 @@
+[33mcommit d7583f21620e0b4fdfabd6c8ccbbd35c20e87801[m
+Author: Travis <travis@myjewelology.com>
+Date:   Tue Jun 23 15:03:26 2015 -0400
+
+    Added validation to our task file
+
+[33mcommit 3adc77435432e4fd30aa962481b59c1cbc822fca[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 23:05:05 2015 -0400
+
+    Added link detection
+
+[33mcommit 04836dab420f8c7fceaffbfcddddf07db2ac9812[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 22:10:11 2015 -0400
+
+    Finished ui ux touches
+
+[33mcommit be9c9ef2e4ce2aa61dcc3e9d60b7888f6b8c3656[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 21:25:41 2015 -0400
+
+    Applied new design to old task logic
+
+[33mcommit 63db7a06713d690188241224fa6cf2fe5527da87[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 20:17:17 2015 -0400
+
+    Made test page with task panel
+
+[33mcommit 65396031c761a26d68724b181a9af70cce4d9f96[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 19:05:49 2015 -0400
+
+    Refactored our tables and added state condition
+
+[33mcommit 346be16cf0ab3a4176c2c7c7e9a45f094614f699[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 18:33:37 2015 -0400
+
+    Added change task custom action
+
+[33mcommit 05c411fe97cd7f0a90bb12e6bcbc38a5ff77c36f[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 16:57:16 2015 -0400
+
+    Added state to our task
+
+[33mcommit f18d4702fd1081434b2d0381a867edd06dea0767[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 15:50:05 2015 -0400
+
+    Added a user id to tasks, configured user task associations
+
+[33mcommit 890712d40dca96fc5c246f46a9f0908575a39ad5[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 01:55:51 2015 -0400
+
+    Refactored out tables and added state
+
+[33mcommit b767bc4fd805186a88e3e9584059ace578f081d7[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 22 00:45:41 2015 -0400
+
+    Added change task custom action
+
+[33mcommit 8808f3c9c34926d557352223d45c3191ce9f50f4[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 21 14:38:45 2015 -0400
+
+    Added state to our tasks
+
+[33mcommit e8432f9617a8d1078c1d137d9ab5652bd2c9f21f[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 21 13:29:06 2015 -0400
+
+    Added a user id to tasks, configured user task associations
+
+[33mcommit a0679b86fd47871f10b411fbec53c574abf2752c[m
+Author: Travis <travis@myjewelology.com>
+Date:   Fri Jun 19 17:22:57 2015 -0400
+
+    Created tasks scaffold
+
+[33mcommit 24fc9e3689e1c4c64495e415229e234aef84b760[m
+Author: Travis <travis@myjewelology.com>
+Date:   Fri Jun 19 16:32:46 2015 -0400
+
+    Added nice styling to the edit and sign up page
+
+[33mcommit 818260ce611dc727c895f4008b8255af50815160[m
+Author: Travis <travis@myjewelology.com>
+Date:   Thu Jun 18 23:05:41 2015 -0400
+
+    Made the login page better
+
+[33mcommit 10b044e79882dd5bd66c214230416b976f043036[m
+Author: Travis <travis@myjewelology.com>
+Date:   Wed Jun 17 01:31:22 2015 -0400
+
+    Added links and routes
+
+[33mcommit 89ff86c7f429984d770a167d5af2036842085dc0[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 14 16:24:39 2015 -0400
+
+    Added devise
+
+[33mcommit 4513f549c544f164b5a68346a7c8c3aaa32ee41b[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 14 16:02:52 2015 -0400
+
+    Added simpleform
+
+[33mcommit 2d2af8deb77a15b1545c9361c6f70714f2f2d667[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 14 10:57:11 2015 -0400
+
+    Fixed mistake now ready for next class
+
+[33mcommit 213822b2f57c3bf569fd79b8a76860ad16790a67[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 14 10:42:30 2015 -0400
+
+    I messed up need to see which files were chaged
+
+[33mcommit 09096fe855e9bd8fa2b90cfe274088d8413c351a[m
+Author: Travis <travis@myjewelology.com>
+Date:   Sun Jun 14 09:46:46 2015 -0400
+
+    Made the homepage look better
+
+[33mcommit 7a181b74ab955f057fcceddd063cc36b21d7e029[m
+Author: Travis <travis@myjewelology.com>
+Date:   Thu Jun 11 15:23:23 2015 -0400
+
+    added the about page
+
+[33mcommit 9ceb02ffdccc24d820d615cfb76deead98bffda0[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 1 02:45:34 2015 -0400
+
+    added container functuion
+
+[33mcommit ec0cffcdac6d58504ef31161eaed9f5d12735b44[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 1 02:30:54 2015 -0400
+
+    Installed bootstrap
+
+[33mcommit 75a08ec2956c2db32a49fc51526cb6efb120dba4[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 1 00:16:14 2015 -0400
+
+    added the abouts page
+
+[33mcommit a83cfb03c9ee70c99237dccf40b099828682585c[m
+Author: Travis <travis@myjewelology.com>
+Date:   Mon Jun 1 00:03:23 2015 -0400
+
+    created pagges and enter new route for home page
+
+[33mcommit b2faac8fcc5980cbae42efe0484dc66897c0bb29[m
+Author: unknown <travis@myjewelology.com>
+Date:   Sun May 31 23:12:22 2015 -0400
+
+    First commit
