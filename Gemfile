@@ -49,3 +49,5 @@ gem "devise"
 gem "js-routes"
 
 gem 'coffee-script-source', '1.8.0'
+
+gem "auto_html"
